@@ -11,8 +11,8 @@ if (!isset($id)) {
 ?>
     <h2 class="text-uppercase text-center py-3" style="background: #00ff5573">php complete crud app</h1>
 
-        <div class="d-flex flex-column my-5">
-            <div class="bg-light card4">
+        <div class="d-flex flex-column my-5 container ">
+            <div class="bg-light card4 p-4">
                 <h2 class="mb-2">Are you sure you want to delete this Student's Details?</h2>
                 <div class="d-flex">
                     <a href="./index.php" class="btn btn-danger me-2">No</a>

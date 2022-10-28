@@ -11,10 +11,6 @@ if ($conn) {
         $data = $select->fetch_assoc();
     }
 }
-
-
-
-
 ?>
 <h2 class="text-uppercase text-center py-3" style="background: #00ff5573">php complete crud app</h1>
     <div class="container d-flex flex-column align-items-center justify-content-center">
@@ -97,7 +93,7 @@ if ($conn) {
             $update_query = "UPDATE `students` SET `first`='$first',`last`='$last',`phone`=$phone, `gender`='$gender' WHERE `id`= $eid";
             $update = $conn->query($update_query);
             if ($update) {
-                echo "<script>alert('Student Update Successfully');location.href = 'index.php'</script>";
+                echo "<script>alert('Student Updated Successfully');location.href = 'index.php'</script>";
             }
         }
     }

@@ -35,7 +35,7 @@ if ($conn) {
                 <div class="col">
                     <div class="form-group mb-3 has-validation">
                         <label for="first">First Name</label>
-                        <input type="text" class="form-control <?= isset($errmsgf) ? 'is-invalid' : 'is-valid' ?>" id="first" aria-describedby="emailHelp" name="first" placeholder="Enter Student's First Name" autocomplete="off" value="<?= $first ?? null ?>">
+                        <input type="text" class="form-control <?= isset($errmsgf) ? 'is-invalid' : null ?>" id="first" aria-describedby="emailHelp" name="first" placeholder="Enter Student's First Name" autocomplete="off" value="<?= $first ?? null ?>">
                         <div class="invalid-feedback">
                             Please choose a first name.
                         </div>
@@ -44,7 +44,7 @@ if ($conn) {
                 <div class="col">
                     <div class="form-group mb-3">
                         <label for="last">Last Name</label>
-                        <input type="text" class="form-control  <?= isset($errmsgl) ? 'is-invalid' : null ?>" id="last" aria-describedby="emailHelp" name="last" placeholder="Enter Student's Last Name" autocomplete="off" value="<?= $last ?? null?>">
+                        <input type="text" class="form-control  <?= isset($errmsgl) ? 'is-invalid' : null ?>" id="last" aria-describedby="emailHelp" name="last" placeholder="Enter Student's Last Name" autocomplete="off" value="<?= $last ?? null ?>">
                         <div class="invalid-feedback">
                             Please choose a last name
                         </div>
@@ -61,9 +61,9 @@ if ($conn) {
                             </select>
                             <input type="number" class="form-control <?= isset($errmsgp) ? 'is-invalid' : null ?>" id="phone" aria-describedby="emailHelp" name="phone" placeholder="Enter Student's Phone Number" autocomplete="off" value="<?= $phone ?>">
                         </div>
-                        <div class="invalid-feedback">
-                            Please choose a phone number
-                        </div>
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose a phone number
                     </div>
 
                 </div>
@@ -87,7 +87,9 @@ if ($conn) {
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-success" name="sub1">Submit</button>
+            <div class="row">
+                <button type="submit" class="btn btn-success mt-4" name="sub1">Submit</button>
+            </div>
         </form>
     </div>
 
