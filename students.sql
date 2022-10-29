@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 28, 2022 at 03:31 PM
+-- Generation Time: Oct 29, 2022 at 06:09 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -42,7 +42,9 @@ CREATE TABLE `students` (
 
 INSERT INTO `students` (`id`, `first`, `last`, `phone`, `gender`, `time`) VALUES
 (21, 'Salman', 'Bhaii', 1839426916, 'Male', '2022-10-28 13:27:57'),
-(22, 'Ayesha', 'Akter', 1886066999, 'Female', '2022-10-28 09:47:29');
+(22, 'Ayesha', 'Akter', 1886066999, 'Female', '2022-10-28 09:47:29'),
+(25, 'Abdullah Al Ahad', 'Bhuiyan', 1886966333, 'Male', '2022-10-28 17:48:09'),
+(27, 'Kaium', 'Hasan', 1876543210, 'Male', '2022-10-28 17:59:56');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +64,7 @@ ALTER TABLE `students`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
